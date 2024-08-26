@@ -2,7 +2,6 @@ import time
 import json
 import copy
 
-from abc import ABC
 from PIL import Image
 
 # imports all of the constants that make this more legible
@@ -14,7 +13,7 @@ FILE_START = '{"Type":0,"JSON":"\\"1.2.0.0\\""}'
 FILE_END = '{"Type":6,"JSON":"{\\"tempo\\":120.0,\\"grid_size\\":4,\\"beat_division\\":4,\\"beat_division_selector_index\\":1,\\"doc_scale\\":1,\\"scale_selector_index\\":0,\\"doc_root\\":1,\\"root_selector_index\\":0,\\"clock_source\\":2,\\"camera_position\\":\\"0, 0\\"}"}'
 
 
-class Midinous(ABC):
+class Midinous():
     """
     A Midinous screen generator - maybe more will happen, who knows
     """
